@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terminal</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <h1>ETHAN JIANG'S STATS PAGE — </h1>
+
+    <div class="design" id="design">
+      <div class = "top-boxes">
+        <div class = "image-box">
+          <div class = "image-title">Ethan Jiang /// Lvl.20</div>
+          <img id="excadrill" src="/images/Excadrill.png" alt="Wild Excadrill (or is this Ethan?)">
+        </div>
+        <!-- lol i should find a more efficient way to do this part -->
+        <div class = "stats-box">
+          <p>ABOUT ................................................................. 3/3</p>
+          <p>POSTS .............................................................. 12/12</p>
+          <p>PROJECTS .......................................................... 7/7</p>
+          <p>RESUME ................................................................. 1/1</p>
+        </div>
+      </div>
+
+      <div class = "bottom-box">
+        <div class="more-stats">
+          <div class="extra-commands">
+            <span class="word">ATTACK</span>
+            <span class="word">DEFENSE</span>
+            <span class="word">SPEED</span>
+            <span class="word">TYPE</span>
+            <span class="word">CREDITS</span>
+            <span class="word">EMAIL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>curious about his stats? type a stat below to learn more...</h2>
+
+    <div id="terminal" onclick="$('setter').focus();">
+      <textarea type="text" id="setter" 
+                            onkeydown="writeit(this, event); moveIt(this.value.length, event)" 
+                            onkeyup="writeit(this, event)" 
+                            onkeypress="writeit(this, event);"></textarea>
+      <div id="getter">
+        <span id="writer"></span><b class="cursor" id="cursor"></b>
+      </div>
+    </div>
+    <script src="js/commands.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/caret.js"></script>
+  </body>
+</html>
