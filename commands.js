@@ -1,0 +1,20 @@
+const commands = {
+    about: ["I'm a fourth-year BA/MA student at the University of Chicago,",
+        "where I study Economics, International Relations, and Critical Race and Ethnic Studies.",
+        "I design policy to maximize the promise and minimize the peril of emerging technology,",
+        "with particular interests in decarbonization and AI. I've previously modeled nuclear",
+        "waste shipping networks for the federal government, managed the Dallas Mavericks' data", 
+        "warehouse and consulted on blockchain projects with Nobel Prize-winning economists."],
+    posts: ["which post...? type a key word:", "tiger", "patent", 
+        "cop28", "hotdog", "kungfu", "nationalism", "mekong", "latin", "sports", 
+        "transnationalism", "flight-tracker"],
+    projects: ["which project...? type a key word:", "carrots", 
+        "lead-water", "green-roof", "safety", "elevator", "podcast"],
+    resume: ["i once ate many bananas"],
+    attack: ["yes i do"],
+    defense: ["1000000/1000000"],
+    speed: ["faster than a lambo"],
+    type: ["this website's builder..."],
+    credits: ["gimme a sec i'll get there — it was built by this rlly cool person named jesenia tho for now"],
+    email: ["ethanj@uchicago.edu"]
+};
