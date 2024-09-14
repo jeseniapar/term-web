@@ -3,5 +3,5 @@ This is a webpage portfolio for Ethan Jiang.
 - I'm still working on (1) responsiveness and (2) small design things.
 - Need to link certain commands to other pages.
 
-View [github host webpage](https://jeseniapar.github.io/term-web.github.io/).
+View [the website here!](https://jeseniapar.github.io/term-web.github.io/).
 
