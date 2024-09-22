@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terminal</title>
+  <title>ethan_stats</title>
   <link rel="stylesheet" href="styles.css"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +18,31 @@
       <div class = "top-boxes">
         <div class = "image-box">
           <div class = "image-title">Ethan Jiang /// Lvl.20</div>
-          <img id="excadrill" src="excadrill.png" alt="Wild Excadrill (or is this Ethan?)">
+          <img id="excadrill" src="/images/Excadrill.png" alt="Wild Excadrill (or is this Ethan?)">
         </div>
-        <!-- lol i should find a more efficient way to do this part -->
-        <div class = "stats-box">
-          <p>ABOUT ................................................................. 3/3</p>
-          <p>POSTS .............................................................. 12/12</p>
-          <p>PROJECTS .......................................................... 7/7</p>
-          <p>RESUME ................................................................. 1/1</p>
+ 
+
+        <div class="stats-box">
+          <div class="stat-row">
+            <span class="stat-name">ABOUT</span>
+            <span class="dots"></span>
+            <span class="stat-number">3/3</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">POSTS</span>
+            <span class="dots"></span>
+            <span class="stat-number">12/12</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">PROJECTS</span>
+            <span class="dots"></span>
+            <span class="stat-number">7/7</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-name">RESUME</span>
+            <span class="dots"></span>
+            <span class="stat-number">1/1</span>
+          </div>
         </div>
       </div>
 
@@ -55,8 +72,8 @@
         <input id="myInput" autocomplete="off">
     </div>
 
-    <script src="commands.js"></script>
-    <script src="function.js"></script>
+    <script src="/js/commands.js"></script>
+    <script src="/js/function.js"></script>
     <script>
         var input = document.getElementById("myInput");
         input.addEventListener("input", updateVisibleInput);
