@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-h1 {
+h1,h2 {
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -39,24 +39,25 @@ body {
 
 .top-boxes {
   display: flex;
-  padding: 10px;
+  padding: 2px;
   gap: 5px;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 0px;
 }
 
 .image-box {
   flex-basis: 33.33%;
-  border: 4px solid #8e8e8e;
+  border: 5px solid #48773d;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #789d6f;
 }
 
 .image-title {
-  background-color: #aaaaaa;
-  color: rgb(0, 0, 0);
+  background-color: #48773d;
+  color: #a6e298;
   padding: 10px;
   text-align: center;
   height: 18%;
@@ -74,31 +75,56 @@ body {
 
 .stats-box {
   flex-basis: 66.67%;  
-  border: 4px solid #8e8e8e;
+  border: 5px solid #48773d;
   padding: 5px 10px;  
-  background-color: #f0f0f0;
+  background-color: #789d6f;
   font-size: 40px;
-  color: #7b7b7b;
+  color: #bdf5b0;
   font-size: 60px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-name {
+  flex: 0 0 auto;
+}
+
+.stat-number {
+  flex: 0 0 auto;
+}
+
+.dots {
+  flex-grow: 1;
+  margin: 0 10px;
+  border-bottom: 5px dotted #bdf5b0;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .bottom-box {
   display: flex;
   justify-content: center;
   width: 100%; 
-  color: #7b7b7b;
+  color: #bdf5b0;
+  margin-top: 0px;
+  padding: 2px;
 }
 
 .more-stats {
   width: 100%; 
-  background-color: #f0f0f0;
+  background-color: #789d6f;
   padding: 5px;
   font-size: 60px;
   text-align: center;
-  border: 4px solid #8e8e8e;
+  border: 5px solid #48773d;
   box-sizing: border-box;
   height: 80px;
-  margin: 5px;
+  margin-top: 3px;
   display: flex;            
   align-items: center;
 }
@@ -115,36 +141,36 @@ body {
 
 /* TERMINAL STUFF */
 
-/* need to figure out!! */
-/* .body #terminal-stuff {
-  font-size: 30px;
-  color: white;
-} */
-
 #output-container {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 #input-wrapper {
   display: flex;
   align-items: center;
+  margin-top: 0px;
 }
 #prompt {
   white-space: nowrap;
+  font-size: 30px;
 }
 #visible-input {
   white-space: nowrap;
   min-width: 1px;
+  font-size: 30px;
 }
 #myInput {
   opacity: 0;
   position: absolute;
+  font-size: 30px;
 }
 .command-output {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  font-size: 30px;
 }
+
 .blinking-cursor {
   display: inline-block;
-  width: 10px;
+  width: 2px;
   height: 20px;
   background-color: #f0f0f0;
   margin-left: 5px;
